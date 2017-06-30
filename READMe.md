@@ -1,10 +1,10 @@
-# Pre-work - *Prework for Codepath bootcamp*
+# Pre-work - *Name of App Here*
 
-**Prework for Codepath bootcamp** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**Name of your app** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-Submitted by: **Bxr556**
+Submitted by: **Your Name Here**
 
-Time spent: **2** hours spent in total
+Time spent: **X** hours spent in total
 
 ## User Stories
 
