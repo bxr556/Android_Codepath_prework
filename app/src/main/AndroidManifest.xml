@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".EditItemActivity"></activity>
+
+        <provider
+            android:authorities="com.codepath.todoapp"
+            android:name=".data.ToDoItemProvider"
+            android:exported="false"/>
     </application>
 
 </manifest>
