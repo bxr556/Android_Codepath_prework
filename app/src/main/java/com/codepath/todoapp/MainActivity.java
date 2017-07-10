@@ -139,7 +139,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         String[] projection = {
                 ToDoItemContract.toDoItemEntry._ID,
-                ToDoItemContract.toDoItemEntry.COLUMN_TITLE
+                ToDoItemContract.toDoItemEntry.COLUMN_TITLE,
+                ToDoItemContract.toDoItemEntry.COLUMN_PRIORITY
         };
 
         return new CursorLoader(this,
@@ -147,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 projection,
                 null,
                 null,
-                null);
+                "PRIORITY ");
     }
 
     @Override

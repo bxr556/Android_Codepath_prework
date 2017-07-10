@@ -23,7 +23,12 @@ public class ToDoItemDbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String SQL_CREATE_TODO_TABLE = "CREATE TABLE "+ ToDoItemContract.toDoItemEntry.TABLE_NAME + "("
                 + ToDoItemContract.toDoItemEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + ToDoItemContract.toDoItemEntry.COLUMN_TITLE + " TEXT NOT NULL);";
+                + ToDoItemContract.toDoItemEntry.COLUMN_TITLE + " TEXT NOT NULL,"
+                + ToDoItemContract.toDoItemEntry.COLUMN_DUE_DATE  + " TEXT  ,"
+                + ToDoItemContract.toDoItemEntry.COLUMN_NOTES  + " TEXT  ,"
+                + ToDoItemContract.toDoItemEntry.COLUMN_PRIORITY  + " TEXT DEFAULT 'HIGH' ,"
+                + ToDoItemContract.toDoItemEntry.COLUMN_STATUS  + " TEXT  "
+                + ");";
 
         db.execSQL(SQL_CREATE_TODO_TABLE);
     }

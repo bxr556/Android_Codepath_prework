@@ -46,7 +46,9 @@ public final class ToDoItemContract {
         public static final String _ID = BaseColumns._ID;
 
         public static final String COLUMN_TITLE = "title";
-
+        public static final String COLUMN_NOTES = "notes";
+        public static final String COLUMN_PRIORITY = "priority";
+        public static final String COLUMN_DUE_DATE ="due_date";
+        public static final String COLUMN_STATUS ="status";
     }
-
 }
