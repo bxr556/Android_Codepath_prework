@@ -8,6 +8,9 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -27,6 +30,24 @@ public class EditItemActivity extends AppCompatActivity implements LoaderManager
     Spinner sPriority;
     Spinner sStatus;
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.save:
+                onSave();
+            default:
+
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     //private int position;
     //private String content;
@@ -54,7 +75,7 @@ public class EditItemActivity extends AppCompatActivity implements LoaderManager
 
     }
 
-    public void onSubmit(View v){
+    private void onSave(){
         EditText etItemText = (EditText)findViewById(R.id.et_title);
         String newContent = etItemText.getText().toString();
         if (newContent.trim().length()==0){

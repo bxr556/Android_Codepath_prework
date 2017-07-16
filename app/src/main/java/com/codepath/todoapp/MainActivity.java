@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 projection,
                 null,
                 null,
-                "PRIORITY ");
+                "case when PRIORITY='HIGH' then 3 when priority='MEDIUM' then 2 when priority='LOW' then 1 end desc");
     }
 
     @Override

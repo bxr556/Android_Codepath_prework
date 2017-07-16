@@ -2,6 +2,7 @@ package com.codepath.todoapp;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,13 @@ public class ToDoItemCursorAdapter extends CursorAdapter {
 
         titleTextView.setText(title);
         priorityTextView.setText(priority);
+        if (priority.equals("HIGH")) {
+            priorityTextView.setTextColor(Color.RED);
+        }else if (priority.equals("MEDIUM")){
+            priorityTextView.setTextColor(Color.CYAN);
+        }else if (priority.equals("LOW")){
+            priorityTextView.setTextColor(Color.GREEN);
+        }
 
     }
 }
