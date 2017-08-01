@@ -33,7 +33,7 @@ Here's a walkthrough of implemented user stories:
 
 
 
-<img src='http://i.imgur.com/cLYSjcH.gifv' title='First App for bootcamp' width='' alt='First App for bootcamp' />
+<img src='http://i.imgur.com/cLYSjcH.gif' title='First App for bootcamp' width='' alt='First App for bootcamp' />
 
 
 
