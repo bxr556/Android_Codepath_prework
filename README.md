@@ -40,6 +40,21 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+## Project Analysis
+
+As part of your pre-work submission, please reflect on the app and answer the following questions below:
+
+**Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
+
+**Answer:** [I enjoy my learning with Android app development platform. It has many design patterns incorporated. For example, Adapter pattern is a very thoughthrough pattern that is very flexible. Mobile has a lot of limitations, such as limited battery life, screen size, computation power etc. In order to overcome all those limitations, a good understandign of the platform is very important. In terms of layout, there are so many different mobile screen sizes out there and in order to have an app that looks good on differnt screen, a good understandign of different type of layout, responsive design etc is critical.  ].
+
+**Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
+
+**Answer:** [ ArrayAdapter is a type of the adapter that implements Adapter interface. It acts as a link between a data set and an adapter view. It is responsible to retrieve data from the data source and use it to populate any view that is related to it. It is very important because it can display a large data sets very efficiently. 
+
+ConvertView is used to increase the performance of the adapter. It is recycled when adapter need to display new item and the existing view item is not longer needed. Instead of creating a new view item, an existing view item is reused. ]
+
+
 ## Notes
 
 Describe any challenges encountered while building the app.
